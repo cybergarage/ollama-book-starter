@@ -1,0 +1,11 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+
+# サンプルの実行で生成されるファイル
+ch07_rag/index.json
+titles.csv
