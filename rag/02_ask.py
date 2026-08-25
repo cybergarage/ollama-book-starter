@@ -1,4 +1,4 @@
-"""第7章 質問に関係する部分を取り出し、それを根拠に答えさせる。"""
+"""質問に関係する部分を取り出し、それを根拠に答えさせる。"""
 
 import json
 from pathlib import Path
@@ -7,7 +7,7 @@ import ollama
 
 EMBED_MODEL = "embeddinggemma"
 CHAT_MODEL = "gemma4:e2b"
-INDEX_FILE = Path("ch07_rag/index.json")
+INDEX_FILE = Path("rag/index.json")
 TOP_K = 3
 
 records = json.loads(INDEX_FILE.read_text(encoding="utf-8"))

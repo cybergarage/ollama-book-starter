@@ -1,4 +1,4 @@
-"""第7章 文書を分割し、埋め込みにして保存する。"""
+"""文書を分割し、埋め込みにして保存する。"""
 
 import json
 from pathlib import Path
@@ -6,8 +6,8 @@ from pathlib import Path
 import ollama
 
 EMBED_MODEL = "embeddinggemma"
-DOC_DIR = Path("ch07_rag/documents")
-INDEX_FILE = Path("ch07_rag/index.json")
+DOC_DIR = Path("rag/documents")
+INDEX_FILE = Path("rag/index.json")
 CHUNK_SIZE = 400
 OVERLAP = 100
 

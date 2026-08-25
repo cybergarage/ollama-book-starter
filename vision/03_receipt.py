@@ -1,4 +1,4 @@
-"""第6章 レシートの画像から項目を読み取る。"""
+"""レシートの画像から項目を読み取る。"""
 
 from ollama import chat
 from pydantic import BaseModel
@@ -16,7 +16,7 @@ response = chat(
         {
             "role": "user",
             "content": "このレシートの画像から、店名、日付、合計金額を読み取ってください。",
-            "images": ["ch06_vision/images/receipt.jpg"],
+            "images": ["vision/images/receipt.jpg"],
         }
     ],
     format=Receipt.model_json_schema(),

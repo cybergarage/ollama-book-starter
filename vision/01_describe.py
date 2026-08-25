@@ -1,9 +1,9 @@
-"""第6章 1枚の画像を説明させる。"""
+"""1枚の画像を説明させる。"""
 
 from ollama import chat
 
 MODEL = "gemma4:e2b"
-IMAGE = "ch06_vision/images/sample.jpg"
+IMAGE = "vision/images/sample.jpg"
 
 response = chat(
     model=MODEL,

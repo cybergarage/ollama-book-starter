@@ -1,4 +1,4 @@
-"""第5章 応答の形式を指定して、文章から項目を抜き出す。"""
+"""応答の形式を指定して、文章から項目を抜き出す。"""
 
 from ollama import chat
 from pydantic import BaseModel

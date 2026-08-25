@@ -1,4 +1,4 @@
-"""第9章 道具を使い終わるまで繰り返すエージェント。"""
+"""道具を使い終わるまで繰り返すエージェント。"""
 
 from datetime import date
 from pathlib import Path
@@ -38,7 +38,7 @@ TOOLS = {"get_today": get_today, "count_files": count_files}
 messages = [
     {
         "role": "user",
-        "content": "今日の日付と、ch07_rag/documents にあるファイルの数を調べて、1行にまとめてください。",
+        "content": "今日の日付と、rag/documents にあるファイルの数を調べて、1行にまとめてください。",
     }
 ]
 

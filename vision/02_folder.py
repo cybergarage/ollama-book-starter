@@ -1,11 +1,11 @@
-"""第6章 フォルダ内の画像にまとめてタイトルを付ける（表示のみ）。"""
+"""フォルダ内の画像にまとめてタイトルを付ける（表示のみ）。"""
 
 from pathlib import Path
 
 from ollama import chat
 
 MODEL = "gemma4:e2b"
-IMAGE_DIR = Path("ch06_vision/images")
+IMAGE_DIR = Path("vision/images")
 SUFFIXES = {".jpg", ".jpeg", ".png"}
 
 for path in sorted(IMAGE_DIR.iterdir()):

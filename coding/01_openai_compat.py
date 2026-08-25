@@ -1,4 +1,4 @@
-"""第8章 OpenAI互換の窓口から、手元のモデルを使う。"""
+"""OpenAI互換の窓口から、手元のモデルを使う。"""
 
 from openai import OpenAI
 

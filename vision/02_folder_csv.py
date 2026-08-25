@@ -1,4 +1,4 @@
-"""第6章 フォルダ内の画像にタイトルを付け、CSVへ保存する。
+"""フォルダ内の画像にタイトルを付け、CSVへ保存する。
 
 02_folder.py に、1件ごとの書き込みと処理済みの飛ばしを加えた版です。
 """
@@ -9,7 +9,7 @@ from pathlib import Path
 from ollama import chat
 
 MODEL = "gemma4:e2b"
-IMAGE_DIR = Path("ch06_vision/images")
+IMAGE_DIR = Path("vision/images")
 OUTPUT_FILE = Path("titles.csv")
 SUFFIXES = {".jpg", ".jpeg", ".png"}
 PROMPT = "この画像の内容を、20文字程度の日本語のタイトルにしてください。説明は不要です。"
