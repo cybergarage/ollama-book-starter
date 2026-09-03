@@ -48,7 +48,7 @@ python check_env.py
 **このフォルダ（リポジトリの一番上）から**実行してください。
 
 ```
-python chat/01_hello.py
+python chat/hello.py
 ```
 
 フォルダの中へ移動してから実行すると、サンプルの画像や文書への道筋が合わなくなります。
