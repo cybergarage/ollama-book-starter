@@ -11,10 +11,10 @@ REQUIRED_MODELS = ["gemma4:e2b", "embeddinggemma"]
 
 def check_python():
     version = sys.version_info
-    ok = version >= (3, 10)
+    ok = version >= (3, 9)
     print(f"[{'OK' if ok else 'NG'}] Python {version.major}.{version.minor}.{version.micro}")
     if not ok:
-        print("     Python 3.10以降が必要です。")
+        print("     Python 3.9以降が必要です。")
     return ok
 
 

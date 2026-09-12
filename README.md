@@ -29,7 +29,9 @@ ollama pull gemma4:e2b
 ollama pull embeddinggemma
 ```
 
-3. Pythonの環境を用意して、必要な道具を入れる
+3. Python 3.9以降の環境を用意して、必要な道具を入れる
+
+本書のプログラムは、macOSのPython 3.9で動作確認しています。macOSでは、まず `python3 --version` でバージョンを確認してください。3.9以降なら、その環境を使えます。仮想環境を作る前は、macOSやLinuxでは次の `python` を `python3` と読み替えてください。
 
 ```
 python -m venv .venv
@@ -77,4 +79,4 @@ python chat/hello.py
 
 | 日付 | 変更内容 |
 | --- | --- |
-| - | - |
+| 2026-09-12 | macOSのPython 3.9での動作確認に基づき、必要なPythonのバージョンを3.10以降から3.9以降へ変更 |
