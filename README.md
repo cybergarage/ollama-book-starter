@@ -1,6 +1,17 @@
-# ローカルLLMをはじめよう サンプルコード
+# はじめてのローカルLLM: Ollamaで自分のパソコンにAI環境をつくろう
 
-書籍『ローカルLLMをはじめよう ― Ollamaで動かす自分専用のAI』のサンプルコードです。
+書籍『はじめてのローカルLLM: Ollamaで自分のパソコンにAI環境をつくろう』のサンプルコードです。
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.amazon.co.jp/dp/B0HJMF5W54"><img src="img/cover-v1.png" alt="はじめてのローカルLLM: Ollamaで自分のパソコンにAI環境をつくろう の表紙" width="280"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>はじめてのローカルLLM</strong><br>Ollamaで自分のパソコンにAI環境をつくろう<br><a href="https://www.amazon.co.jp/dp/B0HJMF5W54">Amazonで見る</a></td>
+  </tr>
+</table>
 
 ## 書籍との対応
 
