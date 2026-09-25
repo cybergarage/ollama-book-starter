@@ -1,0 +1,95 @@
+# はじめてのローカルLLM: Ollamaで自分のパソコンにAI環境をつくろう
+
+日本語 | [English](README.md)
+
+書籍『はじめてのローカルLLM: Ollamaで自分のパソコンにAI環境をつくろう』のサンプルコードです。
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.amazon.co.jp/dp/B0HJMF5W54"><img src="img/cover-v1.png" alt="はじめてのローカルLLM: Ollamaで自分のパソコンにAI環境をつくろう の表紙" width="280"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>はじめてのローカルLLM</strong><br>Ollamaで自分のパソコンにAI環境をつくろう<br><a href="https://www.amazon.co.jp/dp/B0HJMF5W54">Amazonで見る</a></td>
+  </tr>
+</table>
+
+## 書籍との対応
+
+| 書籍の版 | 対応する内容 |
+| --- | --- |
+| 初版 | `main`（最新） |
+
+現時点では、最新の内容が書籍の記述に対応しています。書籍のとおりに動かない場合は、この表と下の「更新の記録」を確認してください。
+
+## 取得
+
+```
+git clone --depth 1 https://github.com/cybergarage/ollama-book-starter.git
+cd ollama-book-starter
+```
+
+`--depth 1` は履歴を取り込まず最新の内容だけを取得する指定です。内容を新しくするときは `git pull` を実行してください。
+
+## 準備
+
+1. Ollamaをインストールして起動する — https://ollama.com/download
+2. 本書で使うモデルを取得する
+
+```
+ollama pull gemma4:e2b
+ollama pull embeddinggemma
+```
+
+3. Python 3.9以降の環境を用意して、必要な道具を入れる
+
+本書のプログラムは、macOSのPython 3.9で動作確認しています。macOSでは、まず `python3 --version` でバージョンを確認してください。3.9以降なら、その環境を使えます。仮想環境を作る前は、macOSやLinuxでは次の `python` を `python3` と読み替えてください。
+
+```
+python -m venv .venv
+source .venv/bin/activate     # Windows は .venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+4. 準備ができたか確認する
+
+```
+python check_env.py
+```
+
+## 実行のしかた
+
+**このフォルダ（リポジトリの一番上）から**実行してください。
+
+```
+python chat/hello.py
+```
+
+フォルダの中へ移動してから実行すると、サンプルの画像や文書への道筋が合わなくなります。
+
+## 章とフォルダの対応
+
+フォルダ名に章番号は入れていません。章の順序が変わっても、このリポジトリは変更しないためです。
+書籍の章との対応は、この表だけを正とします。
+
+| フォルダ | 章 |
+| --- | --- |
+| `chat` | 第7章 PythonからOllamaを使おう |
+| `vision` | 第8章 画像を読ませよう |
+| `rag` | 第9章 手元の文書に答えさせよう |
+| `coding` | 第10章 プログラミングを手伝わせよう |
+| `agent` | 第11章 AIエージェントを作ろう |
+| `hardware` | 第12章 快適に動かすパソコンを選ぼう |
+
+## 動かないときは
+
+まず `python check_env.py` を実行してください。原因の多くはここに表示されます。
+
+## 更新の記録
+
+書籍の刊行後に加えた変更を記録します。
+
+| 日付 | 変更内容 |
+| --- | --- |
+| 2026-09-12 | macOSのPython 3.9での動作確認に基づき、必要なPythonのバージョンを3.10以降から3.9以降へ変更 |
