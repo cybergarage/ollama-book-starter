@@ -8,16 +8,16 @@ This is the companion sample repository for *Getting Started with Local LLMs: Bu
 
 The book takes you from installing Ollama and choosing a model to using local AI for conversations, images, document search, and AI agents. The Python examples in this repository let you try these ideas with small programs and sample materials.
 
-**The English edition is in preparation.** Until it is published, the cover image and Amazon links below refer to the Japanese edition.
+**The English edition is now available on [Amazon Kindle](https://www.amazon.com/dp/B0HL2YBY4Q).**
 
 <table>
   <tr>
     <td align="center">
-      <a href="https://www.amazon.co.jp/dp/B0HJMF5W54"><img src="img/cover-v1.png" alt="Japanese edition cover of Getting Started with Local LLMs" width="280"></a>
+      <a href="https://www.amazon.com/dp/B0HL2YBY4Q"><img src="img/cover-en-v2.png" alt="English edition cover of Getting Started with Local LLMs" width="280"></a>
     </td>
   </tr>
   <tr>
-    <td align="center"><strong>Getting Started with Local LLMs</strong><br>Build Your Own AI Environment with Ollama<br><a href="https://www.amazon.co.jp/dp/B0HJMF5W54">View the Japanese Edition on Amazon</a></td>
+    <td align="center"><strong>Getting Started with Local LLMs</strong><br>Build Your Own AI Environment with Ollama<br><a href="https://www.amazon.com/dp/B0HL2YBY4Q">View the English Edition on Amazon</a></td>
   </tr>
 </table>
 
@@ -39,9 +39,9 @@ The repository has separate runnable sample directories for each book edition. R
 | Edition | Sample code |
 | --- | --- |
 | Japanese first edition | `ja/` on `main` |
-| English edition (in preparation) | `en/` on `main`; chapter references below follow the English manuscript |
+| English edition | `en/` on `main`; chapter references below follow the English edition |
 
-Chapter numbering differs between the existing Japanese README and the English manuscript. Use the table below for the English edition. Check the changelog if the repository behaves differently from your copy of the book.
+Chapter numbering differs between the existing Japanese README and the English edition. Use the table below for the English edition. Check the changelog if the repository behaves differently from your copy of the book.
 
 ## Get the samples
 
@@ -123,7 +123,7 @@ Model responses can vary between runs. Check the result against your prompt and 
 
 Folder names describe their topics rather than chapter numbers, so they can stay the same when the book’s organization changes.
 
-| Folder | English manuscript chapter |
+| Folder | English edition chapter |
 | --- | --- |
 | `chat/` | Chapter 6: Use Ollama from Python |
 | `vision/` | Chapter 7: Have a model read images |
@@ -131,7 +131,7 @@ Folder names describe their topics rather than chapter numbers, so they can stay
 | `agent/` | Chapter 9: Build an AI agent |
 | `hardware/` | Chapter 10: Choose a computer for comfortable use |
 
-From the repository root, sample images are in `en/vision/images/`, and sample documents are in `en/rag/documents/`. The supplied receipt photo contains Japanese text; the English program asks for an English answer. The `en/coding/` folder is included for parity with the Japanese edition; the current English manuscript does not have a separate corresponding chapter.
+From the repository root, sample images are in `en/vision/images/`, and sample documents are in `en/rag/documents/`. The supplied receipt photo contains Japanese text; the English program asks for an English answer. The `en/coding/` folder is included for parity with the Japanese edition; the English edition does not have a separate corresponding chapter.
 
 ## Troubleshooting
 
@@ -159,7 +159,7 @@ This table records changes to the sample repository.
 
 ## Get the book
 
-The English edition is not yet published. For now, see the [Japanese edition on Amazon Kindle](https://www.amazon.co.jp/dp/B0HJMF5W54).
+Get [Getting Started with Local LLMs: Build Your Own AI Environment with Ollama on Amazon Kindle](https://www.amazon.com/dp/B0HL2YBY4Q).
 
 ## License
 
