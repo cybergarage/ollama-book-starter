@@ -7,5 +7,7 @@ __pycache__/
 .env.*
 
 # サンプルの実行で生成されるファイル
-ch07_rag/index.json
-titles.csv
+ja/rag/index.json
+en/rag/index.json
+ja/titles.csv
+en/titles.csv

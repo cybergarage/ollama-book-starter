@@ -34,12 +34,12 @@ The book introduces the concepts and explains how to check the results. This rep
 
 ## Repository languages and book editions
 
-The existing sample files are shared with the Japanese edition. This English README does not translate the sample programs: prompts, comments, sample documents, and diagnostic messages may still be in Japanese.
+The repository has separate runnable sample directories for each book edition. Run commands from the chosen language directory so relative image and document paths resolve correctly.
 
 | Edition | Sample code |
 | --- | --- |
-| Japanese first edition | Latest contents of `main`, as documented in the Japanese README |
-| English edition (in preparation) | Uses the same repository; chapter references below follow the current English manuscript |
+| Japanese first edition | `ja/` on `main` |
+| English edition (in preparation) | `en/` on `main`; chapter references below follow the English manuscript |
 
 Chapter numbering differs between the existing Japanese README and the English manuscript. Use the table below for the English edition. Check the changelog if the repository behaves differently from your copy of the book.
 
@@ -49,12 +49,12 @@ Clone the repository:
 
 ```console
 git clone --depth 1 https://github.com/cybergarage/ollama-book-starter.git
-cd ollama-book-starter
+cd ollama-book-starter/en
 ```
 
-`--depth 1` downloads the latest files without the full commit history. To update a Git clone later, run `git pull` from its top-level folder.
+`--depth 1` downloads the latest files without the full commit history. To update a Git clone later, run `git pull` from the repository’s top-level folder.
 
-If you do not use Git, select **Code → Download ZIP** on the [repository page](https://github.com/cybergarage/ollama-book-starter), extract the archive, and open a terminal in the extracted folder.
+If you do not use Git, select **Code → Download ZIP** on the [repository page](https://github.com/cybergarage/ollama-book-starter), extract the archive, and open a terminal in its `en` folder.
 
 ## Set up your environment
 
@@ -73,9 +73,9 @@ ollama pull embeddinggemma
 
 ### 3. Create a Python environment
 
-The samples require Python 3.9 or later. The Japanese repository documentation records testing with Python 3.9 on macOS.
+The samples require Python 3.9 or later. The Japanese edition records testing with Python 3.9 on macOS. The English sample code has been syntax checked but not run against a live Ollama server.
 
-Run the following commands from the repository’s top-level folder.
+Run the following commands from `ollama-book-starter/en`.
 
 On macOS or Linux:
 
@@ -103,7 +103,7 @@ Confirm that the version is 3.9 or later before creating the virtual environment
 python check_env.py
 ```
 
-The checker verifies the Python version, the `ollama` Python library, the local Ollama server, and the required models. Each successful check displays `[OK]`; a failed check displays `[NG]`. Its explanatory messages are in Japanese.
+The English checker verifies the Python version, the `ollama` Python library, the local Ollama server, and the required models. Each successful check displays `[OK]`; a failed check displays `[NG]`. Its explanatory messages are in English.
 
 Resolve any `[NG]` items and run the checker again. An all-OK result confirms these setup checks, but does not guarantee that every sample will run: the checker does not verify every dependency or input file.
 
@@ -115,7 +115,7 @@ With Ollama running and the virtual environment activated, run:
 python chat/hello.py
 ```
 
-**Always run examples from the repository’s top-level folder.** Moving into a subfolder before running a script can break relative paths to sample images and documents.
+**Always run examples from `ollama-book-starter/en`.** Moving into a subfolder before running a script can break relative paths to sample images and documents.
 
 Model responses can vary between runs. Check the result against your prompt and source materials rather than expecting an exact match with the book.
 
@@ -131,7 +131,7 @@ Folder names describe their topics rather than chapter numbers, so they can stay
 | `agent/` | Chapter 9: Build an AI agent |
 | `hardware/` | Chapter 10: Choose a computer for comfortable use |
 
-Sample images are in `vision/images/`, and sample documents are in `rag/documents/`. The repository also includes a `coding/` folder referenced by the Japanese README; the current English manuscript does not have a separate corresponding chapter.
+From the repository root, sample images are in `en/vision/images/`, and sample documents are in `en/rag/documents/`. The supplied receipt photo contains Japanese text; the English program asks for an English answer. The `en/coding/` folder is included for parity with the Japanese edition; the current English manuscript does not have a separate corresponding chapter.
 
 ## Troubleshooting
 
@@ -151,7 +151,7 @@ If all checks pass but a sample still fails, read that sample’s error message 
 
 ## Changelog
 
-This table records changes to the shared sample repository.
+This table records changes to the sample repository.
 
 | Date | Change |
 | --- | --- |
