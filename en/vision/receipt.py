@@ -15,7 +15,7 @@ response = chat(
     messages=[
         {
             "role": "user",
-            "content": "Read the store name, date, and total amount from this receipt image.",
+            "content": "Read the store name, date, and total amount from this receipt image. Write the store name in English.",
             "images": ["vision/images/receipt.jpg"],
         }
     ],
