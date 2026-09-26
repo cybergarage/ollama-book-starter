@@ -8,8 +8,8 @@ import ollama
 EMBED_MODEL = "embeddinggemma"
 DOC_DIR = Path("rag/documents")
 INDEX_FILE = Path("rag/index.json")
-CHUNK_SIZE = 400
-OVERLAP = 100
+CHUNK_SIZE = 800
+OVERLAP = 200
 
 
 def split(text):
