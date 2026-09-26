@@ -7,7 +7,7 @@ from pydantic import BaseModel
 class Receipt(BaseModel):
     store: str
     date: str
-    total: int
+    total: float
 
 
 response = chat(
@@ -15,7 +15,7 @@ response = chat(
     messages=[
         {
             "role": "user",
-            "content": "Read the store name, date, and total amount from this receipt image. Write the store name in English.",
+            "content": "Read the store name, date, and total from this receipt image. Return the total as a number of US dollars without the dollar sign.",
             "images": ["vision/images/receipt.jpg"],
         }
     ],
